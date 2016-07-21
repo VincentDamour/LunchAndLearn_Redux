@@ -1,0 +1,8 @@
+// actions/type.js
+export const FETCH_BOOKS = "FETCH_BOOKS";
+export const STOP_FETCHING_BOOKS = "STOP_FETCHING_BOOKS";
+export const ADD_BOOKS = "ADD_BOOKS";
+export const CHANGE_BOOK_LIST_PAGE = "CHANGE_BOOK_LIST_PAGE";
+
+// Une action
+{ type: CHANGE_BOOK_LIST_PAGE, payload: 2 }

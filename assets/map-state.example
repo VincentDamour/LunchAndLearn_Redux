@@ -1,0 +1,10 @@
+function mapStateToProps(state) {
+    const book = state.book.books[state.book.currentBookId];
+    const author = state.author.authors[book.authorId];
+
+    return {
+        isAuthenticated: state.auth.isAuthenticated,
+        book,
+        author
+    };
+}

@@ -1,0 +1,11 @@
+export const filterBooksWithAuthor = createSelector(
+  [state.book.books, state.book.filter, state.author.authors],
+  (books, filter) => {
+    const filteredBooks = _.take(filter.perPage, filter.page * filter.perPage);
+    for (filteredBook of filteredBooks) {
+        filteredBook.author = authors[filteredBook.authorId];
+    }
+
+    return filteredBooks;
+  }
+)
