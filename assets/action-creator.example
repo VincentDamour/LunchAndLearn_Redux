@@ -1,8 +1,0 @@
-export const fetchBooks = () => {
-    async (dispatch) => {
-        dispatch({ type: FETCH_BOOKS });
-        const { data } = await axios.get("books");
-        dispatch({ type: ADD_BOOKS, payload: data });
-        dispatch({ type: STOP_FETCHING_BOOKS });
-    }
-}
