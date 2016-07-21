@@ -72,19 +72,19 @@ export default class Presentation extends React.Component {
                         <Heading size={2} caps fit textColor="#5E412F" textFont="primary">Elm + Flux = Redux</Heading>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={1} caps fit textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps fit textColor="tertiary" textColor="#5E412F">
                             Flux architecture
                         </Heading>
                         <Image src={images.flux.replace("/", "")} margin="2em auto 40px" width="100%"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={1} caps fit textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps fit textColor="tertiary" textColor="#5E412F">
                             Redux architecture
                         </Heading>
                         <Image src={images.redux.replace("/", "")} margin="20px auto 40px" width="85%"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={1} caps fit textColor="#5E412F">
+                        <Heading size={3} caps fit textColor="#5E412F">
                             Redux et ses principles
                         </Heading>
                         <Text textColor="#5E412F">Ne pas les respecter c'est un péché</Text>
@@ -97,7 +97,7 @@ export default class Presentation extends React.Component {
                         </List>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={2} caps textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps textColor="tertiary" textColor="#5E412F">
                             Action
                         </Heading>
                         <CodePane
@@ -107,7 +107,7 @@ export default class Presentation extends React.Component {
                             textSize="0.7em"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={2} caps textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps textColor="tertiary" textColor="#5E412F">
                             Action creator
                         </Heading>
                         <CodePane
@@ -117,7 +117,7 @@ export default class Presentation extends React.Component {
                             textSize="0.6em"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={2} caps textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps textColor="tertiary" textColor="#5E412F">
                             Reducer
                         </Heading>
                         <CodePane
@@ -127,7 +127,7 @@ export default class Presentation extends React.Component {
                             textSize="0.55em"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={2} caps textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps textColor="tertiary" textColor="#5E412F">
                             State
                         </Heading>
                         <CodePane
@@ -137,7 +137,7 @@ export default class Presentation extends React.Component {
                             textSize="0.6em"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={1} caps textColor="#5E412F" textSize="5em">
+                        <Heading size={3} caps textColor="#5E412F" textSize="5em">
                             View
                         </Heading>
                         <Heading size={2} caps fit textColor="tertiary" textColor="#5E412F" margin="30px auto 0">
@@ -148,7 +148,7 @@ export default class Presentation extends React.Component {
                         </Heading>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={2} caps textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps textColor="tertiary" textColor="#5E412F">
                             Map state to props
                         </Heading>
                         <CodePane
@@ -158,7 +158,7 @@ export default class Presentation extends React.Component {
                             textSize="0.65em"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={2} caps textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps textColor="tertiary" textColor="#5E412F">
                             Selector
                         </Heading>
                         <CodePane
@@ -168,20 +168,22 @@ export default class Presentation extends React.Component {
                             textSize="0.55em"/>
                     </Slide>
                     <Slide transition={["slide"]}>
-                        <Heading size={2} caps textColor="tertiary" textColor="#5E412F">
+                        <Heading size={3} caps textColor="tertiary" textColor="#5E412F">
                             Les pros et les cons
                         </Heading>
-                        <Text>Très, très, très, très facile à tester</Text>
-                        <Text>Rend le back-end plus léger</Text>
-                        <Text>Extrêmement simple à utiliser</Text>
-                        <Text>Learning curve</Text>
-                        <Text>Réduis les risques d'erreurs</Text>
-                        <Text>Taille et performance</Text>
-                        <Text>Grande communauté</Text>
-                        <Text>Customizable</Text>
-                        <Text>Easy to Learn, Write, Read, Architect, Maintain and Debug</Text>
-                        <Text>Sépare le code de présentation du code functionnel</Text>
-                        <Text>Permet de deviner les changements et éviter des calls au serveur</Text>
+                        <List>
+                            <ListItem textSize="0.95em">Très, très, très, très facile à tester</ListItem>
+                            <ListItem textSize="0.95em">Rend le back-end plus léger</ListItem>
+                            <ListItem textSize="0.95em">Extrêmement simple à utiliser</ListItem>
+                            <ListItem textSize="0.95em">Learning curve</ListItem>
+                            <ListItem textSize="0.95em">Réduis les risques d'erreurs</ListItem>
+                            <ListItem textSize="0.95em">Taille et performance</ListItem>
+                            <ListItem textSize="0.95em">Grande communauté</ListItem>
+                            <ListItem textSize="0.95em">Customizable</ListItem>
+                            <ListItem textSize="0.95em">Easy to Learn, Write, Read, Architect, Maintain and Debug</ListItem>
+                            <ListItem textSize="0.95em">Sépare le code de présentation du code functionnel</ListItem>
+                            <ListItem textSize="0.95em">Permet de deviner les changements et éviter des calls au serveur</ListItem>
+                        </List>
                     </Slide>
                     <Slide transition={["zoom"]} bgColor="#F0A830">
                         <Heading size={1} fit caps lineHeight={1} textColor="#FCEBB6" style={titleStyle}>
